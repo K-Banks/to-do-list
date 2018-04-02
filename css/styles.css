@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+button {
+  background-color: yellow;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+li{
+  margin-left: 30px;
+  font-size: 25px;
+  list-style: none;
+}
+li button{
+  font-size: 10px;
+}
+p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.styler {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.coder {
+  text-align: center;
+}

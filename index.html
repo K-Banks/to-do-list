@@ -10,37 +10,37 @@
   </head>
   <body>
     <div class="container">
-      <h1>TO DO LIST HEADER</h1>
+      <h1>TO-DO (or not to-do) LIST</h1>
       <div class="row">
         <div class="col-md-6">
           <form id="listSubmit">
             <div class="form-group">
               <label for="titles">Please enter task name:</label>
-              <input type="text" class="form-control" id="title">
+              <input type="text" class="form-control" id="title" required>
             </div>
             <div class="form-group">
-              <label for="details">Enter any task details</label>
-              <input type="text" class="form-control" id="details">
+              <label for="details">Enter any task details:</label>
+              <input type="text" class="form-control" id="details" required>
             </div>
             <div class="form-group">
               <label for="priority">Select priority of task</label>
-              <select multiple class = "form-control" id="priority">
+              <select multiple class = "form-control" id="priority" required>
                 <option value="1">Important</option>
                 <option value="2">Not Important</option>
-                <option value="3">Procrastinate on this</option>
+                <option value="3">Procrastinate On This</option>
               </select>
               <button type="submit" name="button">Add to my to-do list</button>
             </div>
           </form>
         </div>
-        <div class="col-md-6">
-          <ul class="highPriority">High Priority tasks:
+        <div class="coder col-md-6">
+          <ul class="highPriority"><span class="styler">High Priority tasks:</span>
 
           </ul>
-          <ul class="lowPriority">Low Priority tasks:
+          <ul class="lowPriority"><span class="styler">Low Priority tasks:</span>
 
           </ul>
-          <ul class="mehPriority">Procrastination tasks:
+          <ul class="mehPriority"><span class="styler">Procrastination tasks:</span>
 
           </ul>
         </div>

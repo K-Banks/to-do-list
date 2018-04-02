@@ -17,14 +17,20 @@ $(document).ready(function(){
     var newItem = new Item(inputTitle, inputDetails, inputPriority);
     console.log(newItem);
 
-    $("ul.highPriority").append("<li id='"+ newItem.id+"'>" + newItem.title + "<p class='"+newItem.id+"'>" + newItem.details + "</p><button class='button'>Completed!</button></li>");
-
+    if (newItem.priority[0] === "1"){
+      $("ul.highPriority").append("<li id='"+ newItem.id+"'>" + newItem.title + "<p class='"+newItem.id+"'>" + newItem.details + "<button class='button'>Completed!</button></p></li>");
+    } else if (newItem.priority[0] === "2") {
+      $("ul.lowPriority").append("<li id='"+ newItem.id+"'>" + newItem.title + "<p class='"+newItem.id+"'>" + newItem.details + "<button class='button'>Completed!</button></p></li>");
+    } else {
+      $("ul.mehPriority").append("<li id='"+ newItem.id+"'>" + newItem.title + "<p class='"+newItem.id+"'>" + newItem.details + "<button class='button'>Completed!</button></p></li>");
+    }
     $(".button").last().click(function() {
       var listToRemove = document.getElementById(newItem.id);
       console.log(listToRemove);
       listToRemove.remove();
     });
-
-
+    $("#title").val("");
+    $("#details").val("");
+    $("#priority").val("");
   });
 });
