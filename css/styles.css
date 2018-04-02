@@ -8,14 +8,17 @@ button {
   margin-left: 10px;
   margin-top: 10px;
 }
+
 li{
   margin-left: 30px;
   font-size: 25px;
   list-style: none;
 }
+
 li button{
   font-size: 10px;
 }
+
 p {
   font-size: 18px;
   font-style: italic;
