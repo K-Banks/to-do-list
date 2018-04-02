@@ -30,7 +30,7 @@ _Clone this repository to your computer_
 _Open index.html in your browser_
 
 ### Known Bugs
-__
+_No known bugs._
 
 ### Support and contact details:
 _Contact Matt at theofficialmatt@gmail.com_
